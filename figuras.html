@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geometricas | By Rodrigo Gv</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="headerLogo">
+            <img src="img/fondoBlanco.png" alt="">
+            <h1>Figuras Geometricas</h1>
+        </div>
+        <p>ejercicio practico de JavaScript | By Rodrigo Gonzalez</p>
+    </header>
+    <main class="main">
+        <div class="contenedorMain">
+        <div class="cont cuadrado">
+            <section class="contenedor">
+                <h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-square" width="20"
+                        height="20" viewBox="0 0 24 24" stroke-width="3" stroke="#000000" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <rect x="4" y="4" width="16" height="16" rx="2" />
+                    </svg>
+                    Cuadrado
+                </h2>
+                <form action="" class="form formCuadrado">
+                    <label for="inputCuadrado">Escribe cuanto mide cada lado de tu cuadrado</label>
+                    <input type="number" id="inputCuadrado" class="inputText">
+                    <div class="botones">
+                        <div class="boton1">
+                            <button type="button" onclick="calcularPerimetroCuadrado()">calcular perimetro</button>
+                        </div>
+                        <div class="boton2">
+                            <button type="button" onclick="calcularAreaCuadrado()"">calcular el area</button>
+                    </div>
+                    </div>
+                 </form>
+            </section>
+        </div>  <!--cierre-->
+
+        <div class="cont circulo">
+            <section class="contenedor">
+                <h2><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle" width="20" height="20" viewBox="0 0 24 24" stroke-width="2.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round"> <path stroke="none" d="M0 0h24v24H0z" fill="none"/><circle cx="12" cy="12" r="9" /></svg>
+                    Circulo
+                </h2>
+                <form action="" class="form formCuadrado">
+                    <label for="inputCirculo">Escribe cuanto mide el radio de tu Circulo</label>
+                    <input type="number" id="inputCirculo" class="inputText">
+                    <div class="botones">
+                        <div class="boton1">
+                            <button type="button" onclick="calcularCircunferencia()">calcular cicunferencia</button>
+                        </div>
+                        <div class="boton2">
+                            <button type="button" onclick="calcularAreaCirculo()"">calcular el area</button>
+                    </div>
+                    </div>
+                 </form>
+            </section>
+        </div>  <!--cierre-->
+
+
+        <div class="cont triangulo">
+            <section class="contenedor">
+                <h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-triangle" width="20" height="20" viewBox="0 0 24 24" stroke-width="2.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M5 19h14a2 2 0 0 0 1.84 -2.75l-7.1 -12.25a2 2 0 0 0 -3.5 0l-7.1 12.25a2 2 0 0 0 1.75 2.75" />
+                      </svg>
+                    Triangulo
+                </h2>
+                <form action="" class="form formCuadrado">
+                    <label for="inputLado1">Escribe cuanto mide el lado 1 de tu triangulo</label>
+                    <input type="number" id="inputLado1" class="inputText">
+                    <label for="inputLado2">Escribe cuanto mide el lado 2 de tu triangulo</label>
+                    <input type="number" id="inputLado2" class="inputText">
+                    <label for="inputBase">Escribe cuanto mide la base de tu triangulo</label>
+                    <input type="number" id="inputBase" class="inputText">
+                    <label for="inputAltura">Escribe cuanto mide la altura de tu triangulo</label>
+                    <input type="number" id="inputAltura" class="inputText">
+                    <div class="botones">
+                        <div class="boton1">
+                            <button type="button" onclick="calcularPerimetroTriangulo()">calcular perimetro</button>
+                        </div>
+                        <div class="boton2">
+                            <button type="button" onclick="calcularAreaTriangulo()"">calcular el area</button>
+                    </div>
+                    </div>
+                 </form>
+            </section>
+        </div>  <!--cierre-->
+
+
+    </div>
+    </main>
+    
+    
+    <script src=" ./figuras.js"></script>
+</body>
+
+</html>
