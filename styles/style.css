@@ -23,11 +23,21 @@ body{
 
 h1 {
     font-size: 30px;
+    text-transform: uppercase;
+    text-align: center
     
 }
 
 h2{
     font-size: 25px;
+    font-weight: normal;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+h4{
+    font-weight: normal;
+    text-align: center
 }
 
 p {
@@ -36,30 +46,167 @@ p {
 
 label {
     font-size: 20px;
-    max-width: 33rem;
+    max-width: 100%;
+    
 }
 
+li{
+    list-style: none;
+    font-size: 18px;
+}
+
+a{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    
+}
 /*header*/
 
-.header {
+.header{
+    
+    margin: 1rem 5rem;
+    display: flex;
+    border-bottom: 1px solid grey;
+    align-items: center;
+    justify-content: space-between;
+    height: 8.4rem;
+    
+}
+.headerLogo img {
+    height: 8rem;
+}
+
+.dd{
+    position: relative;
+    display: inline-block;
+}
+
+.ddContent{
+    display: none;
+    position: absolute;
+    background-color:#f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+    z-index: 1;
+    width: 18rem;
+    
+}
+
+.ddContent li{  
+    width: 100%;
+    display: block;
+    padding: 2rem 0;
+}
+
+.ddContent a{
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    width: 100%;
+}
+
+
+.nav__ul .link, .nav__ul .active:hover{
+    background-color: #e7e2e2;
+}
+.ddContent li:hover{
+    background-color: #e7e2e2;
+}
+
+.dd:hover .ddContent{
+    display: block;
+    
+}
+
+@media (min-width: 768px) {
+    .dd:hover .ddContent{
+        display: flex;
+    }
+
+    .dd svg{
+        display: none;
+    }
+
+    .header__nav{
+        position: static;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    .nav__ul{
+        position: static;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        text-align: center;
+        box-shadow: none;
+    }
+
+    .nav__ul li{
+        padding: 0;
+        margin-left: 4rem;
+        width:8.2rem;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav__ul li a{
+        padding: 0;
+        display: flex;
+        width: auto;
+        display: inline-block; 
+        height: 30%;
+        
+    }
+
+    .nav__ul li .enlace, .nav__ul li .activo:hover{
+        font-weight: bold;
+        background-color: transparent;
+        
+    }
+    
+    .nav__ul .link, .nav__ul .active:hover{
+        border-bottom: 2px solid black;
+        background-color: transparent;
+    }
+    
+    .nav__ul li:hover{
+        border-bottom: 2px solid black; 
+        background-color: transparent;
+    }
+    
+    .nav__ul li a:hover{
+        font-weight: bold;
+        background-color: transparent;
+    }
+}
+
+/*section*/
+.info {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 5rem 1rem;
 }
 
-.headerLogo {
+.infoHeading {
     display: flex;
     align-items: center;
     padding-bottom: 1rem;
 }
 
-.headerLogo img {
-    height: 5rem;
-}
 
-.header p{
-    text-align: center;
+.info h2{
+    padding-bottom: 1rem;
 }
 
 /*main*/
@@ -133,9 +280,19 @@ h2{
     justify-content: space-between;
 }
 
+.contInput{
+    width: 100%;
+}
+
+.contInput2{
+    display: flex;
+    align-items: center;
+}
+
 .inputText{
     padding: 1rem .5rem;
     border-radius: 10px;
+    width: 90%;
 }
 
 
@@ -166,6 +323,26 @@ button{
     width: 100%;
     
 }
+.clear{
+    width: auto;
+    background-color: transparent;
+    border: none;
+    height: auto;
+    padding: 0;
+}
+
+.contenedor__resultado{
+    padding: 1rem 0;
+    display: flex;
+    
+    
+}
+
+.contenedor__resultado .texto{
+    margin-right:1.5rem ;
+}
+
+
 
 @media (min-width:768px ) {
     .contenedorMain{

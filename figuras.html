@@ -12,11 +12,30 @@
 <body>
     <header class="header">
         <div class="headerLogo">
-            <img src="img/fondoBlanco.png" alt="">
+            <a href="#">
+            <img src="img/fondoBlanco.png" alt="imagen de logo rodrigo">
+        </a>
+        </div>
+ 
+        <div class="header__nav dd">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
+            <ul class="nav__ul ddContent">
+                <li class="active link"><a class="activo enlace" href="#">Geometria</a></li>
+                <li><a href="#">Descuentos</a></li>
+                <li><a href="#">Estadistica</a></li>
+                
+            </ul>
+
+        </div>
+    </header>
+
+    <section class="info">
+        <div class="infoHeading">
             <h1>Figuras Geometricas</h1>
         </div>
-        <p>ejercicio practico de JavaScript | By Rodrigo Gonzalez</p>
-    </header>
+        <h2>en este programa podras calcular el perimetro, la circunferencia y el area de distintas figuras geometricas</h2>
+        <h4>ejercicio practico de JavaScript | By Rodrigo Gonzalez</h4>
+    </section>
     <main class="main">
         <div class="contenedorMain">
         <div class="cont cuadrado">
@@ -31,15 +50,24 @@
                     Cuadrado
                 </h2>
                 <form action="" class="form formCuadrado">
+                    <div class="contInput">
                     <label for="inputCuadrado">Escribe cuanto mide cada lado de tu cuadrado</label>
+                    <div class="contInput2">
                     <input type="number" id="inputCuadrado" class="inputText">
+                    <button class="clear" type="button" onclick="limpiarCamposCuadrado()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M5 20a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8h2V6h-4V4a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v2H3v2h2zM9 4h6v2H9zM8 8h9v12H7V8z"></path><path d="M9 10h2v8H9zm4 0h2v8h-2z"></path></svg></button>
+                    </div>  
+                </div>
                     <div class="botones">
                         <div class="boton1">
                             <button type="button" onclick="calcularPerimetroCuadrado()">calcular perimetro</button>
                         </div>
                         <div class="boton2">
                             <button type="button" onclick="calcularAreaCuadrado()"">calcular el area</button>
+                        </div>
                     </div>
+                    <div class="contenedor__resultado">
+                        <label class="texto">resultado:</label>
+                        <label id="resultadoCuadrado"></label>
                     </div>
                  </form>
             </section>
@@ -52,7 +80,10 @@
                 </h2>
                 <form action="" class="form formCuadrado">
                     <label for="inputCirculo">Escribe cuanto mide el radio de tu Circulo</label>
+                    <div class="contInput2">
                     <input type="number" id="inputCirculo" class="inputText">
+                    <button class="clear" type="button" onclick="limpiarCamposCirculo()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M5 20a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8h2V6h-4V4a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v2H3v2h2zM9 4h6v2H9zM8 8h9v12H7V8z"></path><path d="M9 10h2v8H9zm4 0h2v8h-2z"></path></svg></button>
+                </div>
                     <div class="botones">
                         <div class="boton1">
                             <button type="button" onclick="calcularCircunferencia()">calcular cicunferencia</button>
@@ -60,6 +91,10 @@
                         <div class="boton2">
                             <button type="button" onclick="calcularAreaCirculo()"">calcular el area</button>
                     </div>
+                    </div>
+                    <div class="contenedor__resultado">
+                        <label class="texto">resultado:</label>
+                        <label id="resultadoCirculo"></label>
                     </div>
                  </form>
             </section>
@@ -91,6 +126,11 @@
                         <div class="boton2">
                             <button type="button" onclick="calcularAreaTriangulo()"">calcular el area</button>
                     </div>
+                    <button class="clear" type="button" onclick="limpiarCamposTriangulo()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M5 20a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8h2V6h-4V4a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v2H3v2h2zM9 4h6v2H9zM8 8h9v12H7V8z"></path><path d="M9 10h2v8H9zm4 0h2v8h-2z"></path></svg></button>
+                    </div>
+                    <div class="contenedor__resultado">
+                        <label class="texto">resultado:</label>
+                        <label id="resultadoTriangulo"></label>
                     </div>
                  </form>
             </section>

@@ -68,7 +68,8 @@ function calcularPerimetroCuadrado(){
     const value = input.value;
 
     const perimetro = perimetroCuadrado(value);
-    alert(`el perimetro del cuadrado es: ${perimetro}`);
+    const lblResultadoCuadrado = document.getElementById("resultadoCuadrado");
+    lblResultadoCuadrado.innerText = `el perimetro del cuadrado es de ${perimetro}`;
 }
 
 
@@ -77,7 +78,9 @@ function calcularAreaCuadrado(){
     const value = input.value;
 
     const area = areaCuadrado(value);
-    alert(`el area del cuadrado es: ${area}`);
+
+    const lblResultadoCuadrado = document.getElementById("resultadoCuadrado");
+    lblResultadoCuadrado.innerText = `el area del cuadrado es de ${area}`;
 }
 
 ////CIRCULO
@@ -87,8 +90,11 @@ function calcularCircunferencia(){
     const value = input.value;
 
     const circunferencia = perimetroCirculo(value);
+    const circunfe = circunferencia.toFixed(3);
+    const lblResultadoCirculo = document.getElementById("resultadoCirculo");
+    lblResultadoCirculo.innerText = `la circunferencia del circulo es de ${circunfe}`;
 
-    alert(`la circunferencia del circulo es: ${circunferencia}`);
+    
     
 }
 
@@ -97,7 +103,10 @@ function calcularAreaCirculo(){
     const value = input.value;
 
     const areaCirculoresultado = areaCirculo(value);
-    alert(`el area del circulo es: ${areaCirculoresultado}`);
+    const area = areaCirculoresultado.toFixed(3); //reduccion de decimales a 3 decimales
+    const lblResultadoCirculo = document.getElementById("resultadoCirculo");
+    lblResultadoCirculo.innerText = `el area del circulo es de ${area}`;
+    
 
 }
 
@@ -113,8 +122,9 @@ function calcularPerimetroTriangulo(){
     const inputAltura = document.getElementById("inputAltura");
     const altura = Number(inputAltura.value);
 
-    const ptriangulo = perimetroTriangulo(lado1, lado2, base);
-    alert(`el perimetro de su triangulo es de ${ptriangulo}`)
+    const ptriangulo = perimetroTriangulo(lado1, lado2, base);    
+    const resultTriangulo = document.getElementById("resultadoTriangulo");
+    resultTriangulo.innerText = `el perimetro de su triangulo es de ${ptriangulo}`
 }
 
 function calcularAreaTriangulo(){
@@ -128,6 +138,58 @@ function calcularAreaTriangulo(){
     const altura = Number(inputAltura.value);
 
     const aTriangulo= areaTriangulo(base, altura);
-    alert(`el area de su triangulo es de ${aTriangulo}`)
+    const resultTriangulo = document.getElementById("resultadoTriangulo")
+    resultTriangulo.innerText = `el area de su triangulo es de ${aTriangulo}`
+    
 
 }
+
+
+//funcion para limpiar campos
+function limpiarCamposCuadrado(){
+    document.getElementById('inputCuadrado').value="";
+    const inputp = document.getElementById("resultadoCuadrado");
+
+    inputp.innerText="";
+    
+}
+
+function limpiarCamposCirculo(){
+    document.getElementById('inputCirculo').value="";
+    const inputp = document.getElementById("resultadoCirculo");
+
+    inputp.innerText="";
+    
+}
+
+function limpiarCamposTriangulo(){
+    document.getElementById('inputLado1').value="";
+    document.getElementById('inputLado2').value="";
+    document.getElementById('inputBase').value="";
+    document.getElementById('inputAltura').value="";
+    const inputp = document.getElementById("resultadoTriangulo");
+
+    inputp.innerText="";
+    
+}
+
+
+
+
+
+/*-------------------------------------------------------------------
+
+function trianguloIsosceles(ladoa, ladob, base){
+    if(ladoa == ladob && ladoa != base){
+        console.log("los lados ingresados indica que es un triangulo isosceles")
+
+        const altura = Math.sqrt( Math.pow(ladoa, 2)- (Math.pow(base, 2)/4));
+        console.log(`la altura del triangulo isosceles es de ${altura}`);
+    }
+    else{
+        console.log("el triangulo no es isosceles vuelva a intentar con nuevos valores")
+    }
+
+}
+
+triangulIsosceles();*/
