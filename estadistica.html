@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geometricas | By Rodrigo Gv</title>
+    <link rel="stylesheet" href="styles/styleEst.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="headerLogo">
+            <a href="#">
+                <img src="img/fondoBlanco.png" alt="imagen de logo rodrigo">
+            </a>
+        </div>
+
+        <div class="header__nav dd">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                style="fill: rgb(255, 255, 255);transform: ;msFilter:;">
+                <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+            </svg>
+            <ul class="nav__ul ddContent">
+                <li><a href="figuras.html">Geometria</a></li>
+                <li><a href="#">Descuentos</a></li>
+                <li class="active link"><a class="activo enlace" href="#">Estadistica</a></li>
+
+            </ul>
+
+        </div>
+    </header>
+
+    <section class="info">
+        <div class="infoHeading">
+            <h1>Estadistica</h1>
+        </div>
+        <h2>en este programa podras obtener la moda, media y mediana de una serie de numeros</h2>
+        <h4>ejercicio practico de JavaScript | By Rodrigo Gonzalez</h4>
+    </section>
+
+    <main class="contenedor">
+        <div class="resultado">
+
+        </div>
+        <div class="elemento">
+        <div class="contenedor__opcion">
+            <div class="opt"><button class="uno" id="btnmoda" type="button" onclick="titulosModa()"> Moda</button></div>
+            <div class="opt"><button id="btnmedia" type="button" onclick="titulosMedia()">Media</button></div>
+            <div class="opt"><button id="btnmediana" type="button" onclick="titulosMediana()">Mediana</button></div>
+        </div>
+        <div class="contenedor__info contSmall">
+            <div class="titulo">
+                <h2>Calcular la<h2 id="titulo">moda</h2>
+                </h2>
+            </div>
+            <form class="contenedor__form" onsubmit= "return false">
+                <label for="inputValores">Ingrese los numeros para calcular <label id="desc"> moda</label></label>
+                <input type="text" name="" id="inputValores" placeholder="ej. 1,2,3,4.." >
+                <button type="button" id="boton" onclick="calcularModa()" class="calcular">calcular moda</button>
+
+            </form>
+            <label id="resultadoP"></label>
+        </div>
+    </div>
+        <!--cierre-->
+
+
+    </main>
+
+
+    </div>
+    </main>
+
+
+    <script src=" ./moda.js"></script>
+    <script src=" ./promedio.js"></script>
+    <script src=" ./mediana.js"></script>
+    <script src=" ./cambios.js"></script>
+    <script>
+</script>
+    
+</body>
+
+</html>

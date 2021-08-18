@@ -103,7 +103,7 @@ function calcularAreaCirculo(){
     const value = input.value;
 
     const areaCirculoresultado = areaCirculo(value);
-    const area = areaCirculoresultado.toFixed(3); //reduccion de decimales a 3 decimales
+    const area = areaCirculoresultado.toFixed(4); //reduccion de decimales a 3 decimales
     const lblResultadoCirculo = document.getElementById("resultadoCirculo");
     lblResultadoCirculo.innerText = `el area del circulo es de ${area}`;
     

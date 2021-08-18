@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>porcentajes y descuentos | by Rodrigo Gonzalez</title>
+    <link rel="stylesheet" href="styles/stylesDescuentos.css">
+</head>
+<body>
+    <header class="header">
+    <h1>Porcentajes y Descuentos</h1>
+
+    <p>segundo ejercicio practico  | By Rodrigo Gonzalez</p>
+</header>
+
+<section class="contenedor">
+    <h2>Calcula el precio a pagar de tus productos con descuento</h2>
+    <form action="" class="contenedor__form">
+        <label for="inputPrice">Escribe el precio original de tu producto</label>
+        <input type="number"  id="inputPrice">
+        <!-- <label for="inputDiscount">Escribe el descuento del producto</label>
+        <input type="number" id="inputDiscount"> -->
+        <label for="inputCupon">¿tienes un cupon?, registralo</label>
+        <input type="text" id="inputCupon">
+        <button type="button" onclick="descuentoSolucion3()">Calcular el precio con descuentos</button>
+        <button type="button" onclick="limpiarCampos()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M5 20a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8h2V6h-4V4a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v2H3v2h2zM9 4h6v2H9zM8 8h9v12H7V8z"></path><path d="M9 10h2v8H9zm4 0h2v8h-2z"></path></svg>Limpiar</button>
+
+        <p id="ResultP"></p>
+    </form>
+</section>
+
+    <script src="./descuentos.js"></script>
+    
+</body>
+</html>
