@@ -24,7 +24,7 @@ html {
 }
 
 body{
-    max-height: 100vh;
+    
     font-size: 16px;
     background-color: var(--azul);
 }
@@ -292,7 +292,7 @@ a{
     padding: 1rem 0;
     background-color: var(--blanco);
     margin-bottom: 3rem;
-    width: 90%;
+    width: 100%;
     min-width:29rem ;
     height: 40rem;
     display: flex;
@@ -360,4 +360,41 @@ a{
     }
 }
 
+.agrupados{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem auto 4rem auto;
+    
+    text-align: center;
 
+}
+
+.agrupados a{
+    color: rgb(30, 46, 192);
+    text-decoration: underline;
+}
+
+.agrupados a:hover{
+    font-weight: bold;
+}
+
+.contenedor2{
+    display: none;
+}
+
+
+
+.contenedor__opcion2{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    min-width: 29rem;
+    
+    
+}
+
+.contenedor__opcion2 .opt{
+    margin-left: 1rem;
+}
